@@ -1,0 +1,198 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(1, 1, 16);
+    font-family: 'Poppins';
+}
+
+#all {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+#instructions {
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+header img {
+    width: 50px;
+}
+
+#instructions .card {
+    border-radius: 10px;
+    width: 720px;
+}
+
+#instructions .card  .card-head {
+    background-color: rgb(181, 177, 177);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#instructions .card .card-body {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input {
+    display: flex;
+    margin-right: 5px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.btn-lg {
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-start {
+    color: white;
+    padding: 5px;
+    background-color: #1879c4;
+    border: none;
+}
+
+.btn-start:disabled {
+    background-color: grey;
+    padding: 5px;
+    color: white;
+    border: none;
+}
+
+.btn-start:hover {
+    color: white;
+    padding: 5px;
+    background-color: #5d96d4;
+    border: none;
+}
+
+.btn-start:active {
+    color: white;
+    background-color: #0069d9;
+    border: none;
+}
+
+#playground {
+    display: flex;
+    height: 900px;
+    width: 1080px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    color: white;  
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.scoreboard h1{
+    font-size: 50px;
+    color: white;
+}
+
+.scoreboard img{
+    width: 50px;
+}
+
+canvas {
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+.rewind {
+    width: 960px;
+    margin-bottom: 5px;
+}
+
+#rewindRange {
+    width: 100%;
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-rewind {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.btn-rewind:active {
+    background-color: rgb(184, 12, 12);
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.btn-rewind:hover {
+    background-color: rgb(189, 90, 90);
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.btn-cancel {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    display: none;
+}
+
+.btn-cancel:hover {
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    display: none;
+}
+
+.btn-cancel:active {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    display: none;
+}

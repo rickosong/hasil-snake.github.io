@@ -1,0 +1,9 @@
+#playground {
+    display: flex;
+    height: 900px;
+    width: 1080px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

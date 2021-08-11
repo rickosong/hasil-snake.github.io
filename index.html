@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PYTHONS</title>
+</head>
+<body>
+    <div id="all">
+        <div id="instructions">
+            <header>
+                <h1><img src="design/Jakarta_Icon.png" alt="">PYTHONS</h1>
+            </header>
+
+            <div class="card">
+                <div class="card-head">
+                    <h3>Instructions</h3>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Selamat Datang di game PYTHONS</li>
+                        <li>mulai mainkan game ini dengan cara masukkan nama, lalu tekan tombol "game start"</li>
+                        <li>Gunakan tombol WASD untuk  membuat ularnya bergerak</li>
+                        <li>Jika ular tidk mau bergerak, maka klik papan permainannya dulu, lalu klik lagi tombol WASD</li>
+                    </ol>
+
+                    <div class="input">
+                        <input type="text" class="input-name" id="inputName" placeholder="Masukkan Nama Anda">
+                        <button class="btn-start" id="btnStart" disabled>Game Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="playground">
+            <div class="scoreboard">
+                <p >Score : <spanid id="score"></span></p>
+                <h1><img src="design/Jakarta_Icon.png" alt="">PYTHONS</h1>
+                <p><span id="minutes"></span>:<span id="seconds"></span></p>
+            </div>
+            <div>
+                <canvas tabindex="1" id="canvas"></canvas>
+            </div>
+
+            <div class="rewind">
+                <input type="range" name="" id="rewindRange" min="0" max="5">
+            </div>
+
+            <div class="buttons">
+                <button class="btn-rewind btn-lg" id="btnRewind">rewind</button>
+                <button class="btn-cancel btn-lg" id="btnCancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
